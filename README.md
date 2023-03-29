@@ -62,47 +62,6 @@ auto file = get_file("file_name");
 >
 > core.hh
 
-3. 代码需顶冠注释，如例：
-
-> ```C++
-> /**
-> //  @file get_one_random_num.cc
-> //  @author SuoNi Chan (suoni1919@gmail.com)
-> //  @date 2023-03-28
-> //  获得一个随机数
-> //  @copyright Copyright (SuoNi Chan) 2023
-> //  
-> **/
-> ```
-
-4. 对执行逻辑需注API描述，及给出相关使用样例。
-
-> ```C++
-> /**
-> //  @in 无
->     @out 返回一个随机数字 (范围：0 ~ int_max)
->
->     @example
->     in:
->     out:
->     5
->
->     @example
->     in:
->     out:
->     99
->
->     @example
->     in:
->     out:
->     1450
-> //  
-> **/
-> ```
-
-### 数据呈现与存储约定
-
-项目一律采用C++流进行文件操作，参见用例[Demo模块包](https://github.com/ncuacm/ncutest/tree/main/Demo)
 
 ### TODO
 
