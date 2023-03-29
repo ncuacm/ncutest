@@ -7,7 +7,7 @@
 //  
 **/
 
-
+#include "../../Core/core.hh"
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -38,14 +38,10 @@ int main () {
     cout << "请选择生成文件的份数:" << endl;
     int T;
     cin >> T;
-    //初始化时间种子
-    srand((unsigned)time(0));
 
     for(int i = 1; i <= T; i++) {
-        string f_name = to_string(i)+".in";
-        ofstream OUT(f_name);
-        OUT << rand();
+        auto file = get_file(to_string(i)+".in");
+        *file << get_int();
     }
-
     return 0;
 }
