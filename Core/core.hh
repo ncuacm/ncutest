@@ -125,3 +125,8 @@ shared_ptr<ofstream> get_file(string f_name) {
     shared_ptr<ofstream> p = make_shared<ofstream>(f_name);
     return p;
 } 
+
+shared_ptr<ifstream> get_file_as_cin(string f_name) {
+    shared_ptr<ifstream> p = make_shared<ifstream>(f_name);
+    return p;
+}
