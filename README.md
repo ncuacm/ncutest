@@ -78,6 +78,6 @@ auto file = get_file("file_name");
 
 因为该项目使用了C++随机数库，而mingw64-g++在小于12.0版本的编译器底层实现，
 
-是软件模拟随机数种子而非真正从系统硬件获取随机种子，这里建议你使用最新版的mingw64-g++编译器。
+是软件模拟随机数种子而非真正从系统硬件获取随机种子，这里建议你使用最新版的mingw64-g++编译器，这里提供一份资源[Google云盘](https://drive.google.com/file/d/1o-PhxwKDvAghCbST72LOIvQwi0uJCD8C/view?usp=sharinghttps:/)。
 
 而在Linux系统上使用g++则不会出现类似问题，因为其获得随机种子的途径是直接调用了sys_call。
