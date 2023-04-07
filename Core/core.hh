@@ -130,3 +130,14 @@ shared_ptr<ifstream> get_file_as_cin(string f_name) {
     shared_ptr<ifstream> p = make_shared<ifstream>(f_name);
     return p;
 }
+
+
+//获得一个小写字母
+char get_low_letter() {
+    return (char)('a'+get_int(0,25));
+}
+
+//获得一个大写字母
+char get_cap_letter() {
+    return (char) ('A'+ get_int(0,25));
+}
